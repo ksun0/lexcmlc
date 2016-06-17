@@ -1,0 +1,402 @@
+body {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/* HEADER */
+
+#header-nav {
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0px;
+}
+
+#logo-img {
+    background: url('../images/logo.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-brand h1 {
+    /* Brand name */
+    color: #f6b319;
+    font-size: 1.3em;
+    /*text-shadow: 1px 1px 1px #222;*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    vertical-align: center;
+}
+
+#nav-list a {
+    color: white;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: #f6b319;
+}
+
+#nav-list a span {
+    font-size: 1.0em;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #f6b319;
+}
+
+#all-courses-active {
+    background: #f6b319;
+}
+
+
+/* END HEADER */
+
+
+/* HOME PAGE */
+
+.carousel-inner > .item > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 0 10px 25px;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    margin: 0;
+    padding: 0 25px 25px 0;
+    text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h4 {
+    margin-bottom: 30px;
+}
+
+#home,
+#programs,
+#courses,
+#about,
+#teacher,
+#contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home,
+#courses,
+#teacher {
+    background-color: #F1F1F1;
+}
+
+
+/* HOME SECTION */
+
+
+/* END HOME SECTION */
+
+
+/* PROGRAMS SECTION */
+
+
+/* END PROGRAMS SECTION */
+
+
+/* COURSES SECTION */
+
+.course-tile {
+    position: relative;
+    border: 2px solid #f6b319;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.course-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.course-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+
+/* END COURSES SECTION */
+
+
+/* ABOUT SECTION */
+
+
+/* END ABOUT SECTION */
+
+
+/* TEACHER SECTION */
+
+
+/* END TEACHER SECTION */
+
+
+/* CONTACT SECTION*/
+
+#phone-tile,
+#email-tile,
+#map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #f6b319;
+    overflow: hidden;
+}
+
+#phone-tile:hover,
+#email-tile:hover,
+#map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#phone-tile {
+    background: url('../images/phone.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#email-tile {
+    background: url('../images/email.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#phone-tile span,
+#email-tile span,
+#map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: black;
+    color: white;
+    opacity: .8;
+}
+
+
+/* END CONTACT SECTION*/
+
+
+/* END HOME PAGE */
+
+
+/* FOOTER */
+
+.panel-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+    color: white;
+}
+
+.panel-footer div.row {
+    margin-bottom: 30px;
+}
+
+#contact-info,
+#address {
+    line-height: 2;
+}
+
+#contact-info > span,
+#address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #f6b319;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 30px;
+}
+
+#mary-email {
+    color: inherit;
+}
+
+
+/* END FOOTER */
+
+
+/* SINGLE COURSES PAGE */
+
+.course-item-tile {
+    margin-top: 30px;
+}
+
+.course-item-tile hr {
+    width: 80%;
+}
+
+.course-item-tile .course-item-logistics {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+.course-item-photo {
+    position: relative;
+    border: 2px solid #f6b319;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.course-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    color: white;
+    background-color: #f6b319;
+    text-align: center;
+}
+
+.course-item-description {}
+
+h3.course-item-title {}
+
+.course-item-details {
+    font-size: .9em;
+}
+
+
+/* END COURSE CATEGORY PAGE */
+
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/********** Extra small devices only **********/
+
+@media (max-width: 767px) {
+    #logo-img {
+        margin-left: 30px;
+    }
+    #collapsable-nav a span {
+        /* Collapsed nav menu glyph */
+        margin-right: 5px;
+    }
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .panel-footer section hr {
+        width: 50%;
+    }
+    .course-item-photo {
+        margin-right: auto;
+    }
+    .course-item-tile .course-item-logistics {
+        text-align: center;
+    }
+    .course-item-description {
+        text-align: center;
+    }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 479px) {
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
