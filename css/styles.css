@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -391,6 +391,12 @@ h3.course-item-title {}
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 
 @media (max-width: 479px) {
+    .carousel-caption h3 {
+        font-size: 14px;
+    }
+    .carousel-indicators{
+        display:none;
+    }
     .col-xxs-12 {
         position: relative;
         min-height: 1px;
