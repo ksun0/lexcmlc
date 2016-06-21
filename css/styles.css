@@ -145,6 +145,10 @@ h4 {
 
 /* PROGRAMS SECTION */
 
+hr {
+    width: 80%;
+}
+
 
 /* END PROGRAMS SECTION */
 
@@ -182,9 +186,8 @@ h4 {
 
 /* ABOUT SECTION */
 
-#about {
-    
-}
+#about {}
+
 
 /* END ABOUT SECTION */
 
@@ -293,14 +296,10 @@ h4 {
 /* END FOOTER */
 
 
-/* SINGLE COURSES PAGE */
+/* SINGLE COURSES MODALS */
 
 .course-item-tile {
     margin-top: 30px;
-}
-
-.course-item-tile hr {
-    width: 80%;
 }
 
 .course-item-tile .course-item-logistics {
@@ -334,14 +333,16 @@ h4 {
 
 .course-item-description {}
 
-h3.course-item-title {}
+h3.course-item-title {
+    margin-bottom: 30px;
+}
 
 .course-item-details {
     font-size: .9em;
 }
 
 
-/* END COURSE CATEGORY PAGE */
+/* END COURSE CATEGORY MODALS */
 
 
 /********** Large devices only **********/
@@ -397,8 +398,8 @@ h3.course-item-title {}
     .carousel-caption h3 {
         font-size: 14px;
     }
-    .carousel-indicators{
-        display:none;
+    .carousel-indicators {
+        display: none;
     }
     .col-xxs-12 {
         position: relative;
