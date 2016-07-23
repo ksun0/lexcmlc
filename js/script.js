@@ -27,7 +27,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
     // Show loading icon inside element identified by 'selector'.
     var showLoading = function (selector) {
-        var html = "<div style='margin: 30px' class='text-center'>";
+        var html = "<div style='margin: 200px' class='text-center'>";
         html += "<img src='images/ajax-loader.gif'></div>";
         insertHtml(selector, html);
     };
