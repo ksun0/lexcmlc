@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LexCMLC | Lexington Chinese and Math Learning Center</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/ajax-utils.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -61,7 +62,544 @@
             </div>
         </nav>
     </header>
-    <div id="main-content"> </div>
+    <section>
+        <div class="container">
+            <div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="3500">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                    <li data-target="#main-carousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" style="margin-top: 30px; margin-bottom: 30px">
+                    <div class="item active"> <img src="images/in-class-8.jpg" alt="LexCMLC Picture">
+                        <div class="carousel-caption">
+                            <h3>Learn Math and Chinese</h3> </div>
+                    </div>
+                    <div class="item"> <img src="images/origami.png" alt="LexCMLC Picture">
+                        <div class="carousel-caption">
+                            <h3>Make Amazing Origami</h3> </div>
+                    </div>
+                    <div class="item"> <img src="images/classroom.jpg" alt="LexCMLC Picture">
+                        <div class="carousel-caption">
+                            <h3>An Open Classroom</h3> </div>
+                    </div>
+                    <div class="item"> <img src="images/halloween-group.jpg" alt="LexCMLC Picture">
+                        <div class="carousel-caption">
+                            <h3>Join LexCMLC!</h3> </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+            </div>
+            <!-- Carousel -->
+        </div>
+    </section>
+    <section id="home">
+        <div class="container">
+            <h2 class="text-center">Home</h2>
+            <div class="row">
+                <div class="text-center">
+                    <p>2016 Summer Program is now open! Join now to have a plethora of fun and learning.</p>
+                    <br/>
+                    <button id="image-gallery-button" type="button" class="btn btn-lg" style="margin-bottom: 30px; background: #f6b319"> <i class="glyphicon glyphicon-picture"></i> Image Gallery </button>
+                    <br>
+                    <!-- The container for the list of example images -->
+                    <div id="links">
+                         <a href="images/students-outside.JPG" title="Students Outside" data-gallery> <img src="images/students-outside.JPG" alt="Students Outside"> </a>
+                        <a href="images/students-outside-line.JPG" title="Students Outside Line" data-gallery> <img src="images/students-outside-line.JPG" alt="Students Outside Line"> </a>
+                          <a href="images/student-bus.JPG" title="Student Bus" data-gallery> <img src="images/student-bus.JPG" alt="Student Bus"> </a>
+                          <a href="images/halloween-ta.jpg" title="Halloween TA" data-gallery> <img src="images/halloween-ta.jpg" alt="Halloween TA"> </a>
+                          <a href="images/halloween-class.jpg" title="Halloween Class" data-gallery> <img src="images/halloween-class.jpg" alt="Halloween Class"> </a>
+                        <a href="images/classroom.jpg" title="Classroom" data-gallery> <img src="images/classroom.jpg" alt="Classroom"> </a>
+                        <a href="images/classroom-display.JPG" title="Classroom Display Wall" data-gallery> <img src="images/classroom-display.JPG" alt="Classroom Display Wall"> </a>
+                        <a href="images/classroom-flowers.JPG" title="Classroom Flowers" data-gallery> <img src="images/classroom-flowers.JPG" alt="Classroom Flowers"> </a>
+                        <a href="images/classroom-wall.JPG" title="Classroom Wall" data-gallery> <img src="images/classroom-wall.JPG" alt="Classroom Wall"> </a>
+                        <a href="images/classroom-bathroom.JPG" title="Classroom Bathroom" data-gallery> <img src="images/classroom-bathroom.JPG" alt="Classroom Bathroom"> </a>
+                         <a href="images/in-class-1.jpg" title="In Class 1" data-gallery> <img src="images/in-class-1.jpg" alt="In Class 1"> </a>
+                          <a href="images/in-class-2.jpg" title="In Class 2" data-gallery> <img src="images/in-class-2.jpg" alt="In Class 2"> </a>
+                              <a href="images/in-class-3.jpg" title="In Class 3" data-gallery> <img src="images/in-class-3.jpg" alt="In Class 3"> </a>
+                        <a href="images/dance-1.JPG" title="Dance 1" data-gallery> <img src="images/dance-1.JPG" alt="Dance 1"> </a>
+                        <a href="images/dance-3.JPG" title="Dance 3" data-gallery> <img src="images/dance-3.JPG" alt="Dance 3"> </a>
+                        <a href="images/game-1.JPG" title="Game 1" data-gallery> <img src="images/game-1.JPG" alt="Game 1"> </a>
+                        <a href="images/game-2.JPG" title="Game 2" data-gallery> <img src="images/game-2.JPG" alt="Game 2"> </a>
+                        <a href="images/game-3.JPG" title="Game 3" data-gallery> <img src="images/game-3.JPG" alt="Game 3"> </a>
+                        <a href="images/game-4.JPG" title="Game 4" data-gallery> <img src="images/game-4.JPG" alt="Game 4"> </a>
+                        <a href="images/game-5.JPG" title="Game 5" data-gallery> <img src="images/game-5.JPG" alt="Game 5"> </a>
+                         <a href="images/game-6.JPG" title="Game 6" data-gallery> <img src="images/game-6.JPG" alt="Game 6"> </a>
+                         <a href="images/game-7.JPG" title="Game 7" data-gallery> <img src="images/game-7.JPG" alt="Game 7"> </a>
+                         <a href="images/game-8.JPG" title="Game 8" data-gallery> <img src="images/game-8.JPG" alt="Game 8"> </a>
+                         <a href="images/game-9.JPG" title="Game 9" data-gallery> <img src="images/game-9.JPG" alt="Game 9"> </a>
+                        <a href="images/game-10.JPG" title="Game 10" data-gallery> <img src="images/game-10.JPG" alt="Game 10"> </a>
+                    </div>
+                    <br>
+                    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                    <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+                        <!-- The container for the modal slides -->
+                        <div class="slides"></div>
+                        <!-- Controls for the borderless lightbox -->
+                        <h3 class="title"></h3> <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                        <div class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title"></h4> </div>
+                                    <div class="modal-body next"></div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default pull-left prev"> <i class="glyphicon glyphicon-chevron-left"></i> Previous </button>
+                                        <button type="button" class="btn btn-primary next"> Next <i class="glyphicon glyphicon-chevron-right"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="programs">
+        <div class="container">
+            <h2 class="text-center">Programs</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-xs-12">
+                    <h4 style="margin-top: 30px">Weekday Classes</h4>
+                    <p> <b>上课时间</b>：星期一，二，三，五, 3:15PM – 6:00PM。
+                        <br /> <b>周四</b>：12:15PM - 6:00PM
+                        <br /> <b>课程</b>: 中文,数学 （周四：中文,数学， 舞蹈运动，演讲训练课或手工）
+                        <br /> <b>学费</b>
+                        <br /> 一周二次 $220/月
+                        <br /> 一周三次 $315/月
+                        <br /> 一周四次 $400/月
+                        <br /> 一周五次 $460/月
+                        <br /> 一周六次 $505/月 </p>
+                    <hr> </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 style="margin-top: 30px">Weekend Classes</h4>
+                    <p> Weekend classes are similar to weekday classes, including conversational chinese, word problem solving for math, weekend Chinese, and Chemistry Olympiad. </p>
+                    <hr> </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 style="margin-top: 30px">Summer Classes</h4>
+                    <p>The summer program is a five day mini summer camp, where ids can learn chinese, math, craft, and even some computer coding. This program is great for parents who have to work during the day and want to send their kid to learn origami, chinese knots, chinese yo-yo, table-tennis, board games, summer reading, out-door activities,and even coding simple games. </p>
+                    <hr> </div>
+                <div class="col-md-3 col-xs-12">
+                    <h4 style="margin-top: 30px">Tutoring</h4>
+                    <p> Tutoring is Available During Weekday Evenings and Weekend Whole Day
+                        <br />化学 | Chemistry: AP and SAT
+                        <br /> </b>数学 | Math: Middle School and High School Algebra and Geometry, SAT I, SAT II, AP Calculus </p>
+                </div>
+                <div class="col-xs-12">
+                    <hr>
+                    <h4>We are still open during school holdays, but we will be closed during the following holidays.</h4>
+                    <p>January 2, 2017 New Year's Day
+                        <br /> January 16, 2017 Birthday of Martin Luther King, Jr.
+                        <br /> February 20, 2017 President's Day
+                        <br /> April 14, 2017 Good Friday
+                        <br /> April 17, 2017 Patriots' Day
+                        <br /> May 29, 2017 Memorial Day
+                        <br /> September 5, 2016 Labor Day
+                        <br /> October 10 2016 Columbus Day
+                        <br /> November 11 2016 Veterans Day
+                        <br /> November 24, 25 2016 Thanksgiving Day
+                        <br /> December 26-30 2016 Christmas Break</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="container">
+            <h2 class="text-center">Courses</h2>
+            <h4 class="text-center">
+                Weekday Classes During School Year
+            </h4>
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#creative-movement">
+                        <div class="course-tile"> <img width="250" height="200" src="images/dance-1.JPG" alt="Creative Movement"> <span>Creative Movement</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="creative-movement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Creative Movement</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>01.</div> <img class="img-responsive" width="400" height="400" src="images/dance-1.JPG" alt="Creative Movement"> </div>
+                                            <div class="course-item-logistics">Time: Thu | 3:30pm - 4:30pm
+                                                <br /> All ages are welcome</div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Creative Movement</h3>
+                                            <p class="course-item-details"> Creative movement class is an hour class focusing on gross motor skills and special awareness. We will learn basic ballet techniques through some fun music and also with the many props.
+                                                <br />
+                                                <br />Barbara Miller, has been teaching for 20 years. She has studied at Gene Murray's School Of Ballet Salem, Ma. She is a very passionate teacher emphasizing, in coordination and gross motor skills. She is a member of Dance Teacher's Club Of Boston. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#weekday-chinese">
+                        <div class="course-tile"> <img width="250" height="200" src="images/student-essay.JPG" alt="Weekday Chinese"> <span>Weekday Chinese</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="weekday-chinese" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Weekday Chinese</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>02.</div> <img class="img-responsive" width="400" height="400" src="images/essay-wall.JPG" alt="Weekday Chinese"> </div>
+                                            <div class="course-item-logistics">Time: Mon, Tue, Wed, Fri | 4:00pm - 5:00pm
+                                                <br /> Thu: 1:30pm - 2:30pm</div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Weekday Chinese</h3>
+                                            <p class="course-item-details"> 中文选用《马立平海外华裔儿童中文 教材》。采用直接认字,后学拼音。 利用拼玩识字游戏教具,和利用幅射 识字法,寓教于乐,使其生动活泼, 达到快乐,快速识字。数学因人择 材,因材施教,教材自编。 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#mathematics">
+                        <div class="course-tile"> <img width="250" height="200" src="images/math.png" alt="Mathematics"> <span>Mathematics</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="mathematics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Mathematics</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>03.</div> <img class="img-responsive" width="400" height="400" src="images/math.png" alt="Mathematics"> </div>
+                                            <div class="course-item-logistics">Time: Mon, Tue, Wed, Fri | 5:00pm - 6:00pm
+                                                <br />Thu: 2:30pm - 3:30pm </div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Mathematics</h3>
+                                            <p class="course-item-details"> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#childrens-art-and-craft">
+                        <div class="course-tile"> <img width="250" height="200" src="images/flowers.JPG" alt="Children's Art and Craft"> <span>Children's Art and Craft</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="childrens-art-and-craft" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Children's Art and Craft</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>04.</div> <img class="img-responsive" width="400" height="400" src="images/colorful-design.JPG" alt="Children's Art and Craft"> </div>
+                                            <div class="course-item-logistics">Time: Thu | 4:00pm - 5:00pm</div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Children's Art and Craft</h3>
+                                            <p class="course-item-details"><b>课程内容:</b> 通过各种各种折纸,中国绳结,魔 术气球等活动,引导学生发挥想象力,创造力。 直接用手操作简单工具,对各种形状(点,线, 面,块) 的材料,进行加工,改造,制作出一维 到三维空间的多彩艺术形象。从而培养学生认真 观察,耐心细致的良好习惯。并对培养学生的想 象力和建立立体空间概念都有非常重要的作用。 </p>
+                                        </div>
+                                    </div>
+                                    <hr> </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal -->
+            </div>
+            <h4 class="text-center">Weekend Classes During School Year</h4>
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#conversational-chinese">
+                        <div class="course-tile"> <img width="250" height="200" src="images/conversational-chinese.jpg" alt="Coversational Chinese"> <span>Conversational Chinese</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="conversational-chinese" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Conversational Chinese</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>05.</div> <img class="img-responsive" width="400" height="400" src="images/conversational-chinese.jpg" alt="Conversational Chinese"> </div>
+                                            <div class="course-item-logistics">Time: Sat | 4:00pm - 5:00pm
+                                                <br />Class Size: 4 - 8 Students
+                                                <br />Ages: 4+ years old</div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Conversational Chinese</h3>
+                                            <p class="course-item-details">This program presents Chinese learning and immersion classes for kids! Kids will learn Chinese used in everyday life through play- ing. At the completion of their level, each child will make significant progress in their listening, speaking, reading, and writing skills. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#word-problem-solving">
+                        <div class="course-tile"> <img width="250" height="200" src="images/mathcounts.jpg" alt="Word Problem Solving"> <span>Word Problem Solving</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="word-problem-solving" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Word Problem Solving</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>06.</div> <img class="img-responsive" width="400" height="400" src="images/in-class-10.JPG" alt="Word Problem Solving"> </div>
+                                            <div class="course-item-logistics">Time: Sat | 2:00pm - 3:00pm
+                                                <br />Class Size: 4 - 8 Students
+                                                <br />Grades: 3 - 5
+                                                <br />Time: Sat | 2:00pm - 3:00pm
+                                                <br />Class Size: 4 - 8 Students
+                                                <br />Grades: 5 - 7</div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Word Problem Solving</h3>
+                                            <p class="course-item-details">Based on the student's math and english reading comprehension skills, we will teach word problem solving skills. The textbook will have problems from Singapore, the Math Olympiad, and MathCounts.
+                                                <br />
+                                                <br /> <b>教学语言:</b> 英语 根据学生的数学基础和英文阅读理解能力,讲解分 析新加波应用题,奥数(Math Olypmiad)及中学的 MathTeam,MathCounts以及几何的基本概念,知识和 解题技巧。由浅入深,循序渐进地打好数学基础, 培养和训练学生的解题能力和逻辑思维能力。使学 生能灵活应用已掌握的数学基础知识,解析高难度 习题。为今后初中加入MathTeam,参加麻州和全国 MathCounts比赛做好准备,更为今后高中数理化的 学习打下良好的基础。 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#weekend-chinese">
+                        <div class="course-tile"> <img width="250" height="200" src="images/weekend-chinese.jpg" alt="Weekend Chinese"> <span>Weekend Chinese</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="weekend-chinese" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Weekend Chinese</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>07.</div> <img class="img-responsive" width="400" height="400" src="images/in-class-7.JPG" alt="Weekend Chinese"> </div>
+                                            <div class="course-item-logistics">Time: Sun | 9:00am - 10:00am
+                                                <br />Class Size: 4 - 8 Students
+                                                <br />Ages: 6+ years old </div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Weekend Chinese</h3>
+                                            <p class="course-item-details"> <b>教材:</b> 《马立平海外华裔儿童中文教材》 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal -->
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#chemistry-olympiad">
+                        <div class="course-tile"> <img width="250" height="200" src="images/chemistry-olympiad.png" alt="Chemistry Olympiad"> <span>Chemistry Olympiad</span> </div>
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="chemistry-olympiad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Chemistry Olympiad</h4> </div>
+                            <div class="modal-body">
+                                <div class="course-item-tile">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="course-item-photo">
+                                                <div>08.</div> <img class="img-responsive" width="400" height="400" src="images/chemistry-olympiad.png" alt="Chemistry Olympiad"> </div>
+                                            <div class="course-item-logistics">Time: Sat | 5:00pm - 6:00pm
+                                                <br />Class Size: 4 - 8 Students
+                                                <br />Grades: 9+ </div>
+                                        </div>
+                                        <div class="course-item-description col-sm-7">
+                                            <h3 class="course-item-title">Chemistry Olympiad</h3>
+                                            <p class="course-item-details"> <b>目的: </b>讲解高中化学的基本概念和知识,为高中的 生物课程扫除障碍(10年级上生物,11年级上化 学),并为11年级课程减轻负担。有能力的学生可 为 Chemistry Olympiad 比赛早做准备。 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal -->
+            </div>
+            <h4 class="text-center">Summer Classes</h4>
+            <div class="row">
+                <div class="col-xxs-12">
+                    <a href="" data-toggle="modal" data-target="#chinese-math-craft-coding">
+                        <div class="course-tile"> <img width="250" height="200" src="images/chinese-math-craft.jpg" alt="Chinese, Math, Craft, and Coding Circle"> <span>Chinese, Math, Craft, and Coding Circle</span> </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="chinese-math-craft-coding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Chinese, Math, Craft, and Coding Circle</h4> </div>
+                        <div class="modal-body">
+                            <div class="course-item-tile">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="course-item-photo">
+                                            <div>09.</div> <img class="img-responsive" width="400" height="400" src="images/in-class-3.JPG" alt="Chinese, Math, Craft, and Coding Circle"> </div>
+                                        <div class="course-item-logistics">Time: Mon - Fri | 9:00am - 6:00pm
+                                            <br />Sections: 8/1 - 8/5, 8/8 - 8/12
+                                            <br />8/15 - 8/19, 8/22 - 8/26
+                                            <br />Ages: 6+ </div>
+                                    </div>
+                                    <div class="course-item-description col-sm-7">
+                                        <h3 class="course-item-title">Chinese, Math, Craft, and Coding</h3>
+                                        <p class="course-item-details"><b>Chinese, Math, and Craft: </b>In this five day mini summer camp, kid learn chinese, math, and craft. They engage in fun activities, including origami, chinese knots, chinese yo-yo, table-tennis, board games, summer reading, our-door activity, and even coding simple games.
+                                            <br />
+                                            <br /> <b>Coding Circle: </b>Are you frustrated that your child is playing too much video games? Do you want to turn your child's passion for playing games into making games? Coding Circle is the right place for your child. In this course, students will create interactive games or storylines that they can share. Students will learn the fundamentals of Computer Science, including core concepts such as expressions, loops, and functions. They will be immersed in a friendly environment where they will cultivate their collaboration and problem-solving skills with the guide of a knowledgeable, experienced, and inclusive instructor. By the end of the course, your child will be able to share their own custom story or game built with software on code.org. Coding Circle is a great gateway to spark the preliminary interest of computer science in young children, where they can then learn more as they grow older.</p>
+                                    </div>
+                                    <hr> </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Modal -->
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center">About</h2>
+            <p>中心自2005年成立以来,根据海外中国家庭 儿童的特点及其在包括年龄、上课时间,学科水平的 差异,首次独创了小班复式教学,个别化辅导的方 法。经多年的实践,收到了很好的效果。中心为了拓 宽服务层面,为广大家长提供一站式服务,除原有的 中文和数学外,从2012年春天起特聘了Harvard大学 的英文老师,美工老师。英文课教授英文阅读,写 作。培养学生良好的阅读写作习惯。这样从小开始注 意积累词汇,为英文打好扎实的基础。儿童美工课学 习各种折纸,中国绳结,魔术气球,学习如何利用色 彩鲜艳的纸张,绳子和气球创造出人见人爱从一维到 三维的包括动物,花鸟,人物等形象生动可爱的模 型。由此学生们可利用课后时间不仅学习中文,数 学,还学了美工,增强了英文阅读和写作能力。大大 节省了孩子和家长的时间及费用。 中心位于Stop and Shop,Walgreens对面的商用 办公大楼二楼,大楼附有宽大的停车场,停车方便, 大楼前有62路公交车站。交通便利。宽畅明亮的教室 内除有独立专用洗手间,冷热空调,冰箱,微波炉以 及必备的商业保险外,更有营运者百分之百的全身心 投入,多年的管理和教学经验,以及永远将学生的安 全放在第一位的责任心。 中心全学年开放,与Lexington小学和中学的 开学放假时间保持一致,并与之接轨。如值冬假、春 假及教师培训半天假,本中心可根据需求开放。遇特 殊情况提早放学,如下雪天等,中心会立刻开放。 (可随时插班) </p>
+        </div>
+    </section>
+    <section id="teacher">
+        <div class="container">
+            <h2 class="text-center">Teacher</h2>
+            <p><b>师资</b>: 多年的教学经验，具有博士学位。
+                <br/>
+                <br/>2005-present Director of Lexington Chinese and Math Learning Center Helping Local families to deeply understand foundational principals in Math, Chinese and Science Managed staff and students, plan field trips to enhance art understanding linking it to geometry. Incorporated movement in Mathematics with a strong focus on Bilingual learning methods.
+                <br/>
+                <br/>Chinese, Math /Chemistry Instructor Tutored fundamental Chinese, math to AP Calculus and AP Chemistry to the students from private and public schools covering from elementary schools to high school.
+                <br/>
+                <br/>Ph.D. in Computational Chemistry. Institute of Physical Chemistry, Basel University, Basel, Switzerland. Developed and trained a sophisticate software by utilizing various numerical calculation and matrix algebra. Investigated the dynamics of photodissociation and molecular electronically excited states in UNIX and MAC.
+                <br/>
+                <br/>M.Sc. in Analytical Chemistry. Shanghai Institute of Metallurgy, Academia Sinica, Shanghai, P.R.China. Created a unique method to study kinetics of electrode processes on Bi(III)-EDTA and Rare-earth system in substitution reaction with polargraphy.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="tel:7817992695">
+                        <div id="phone-tile"><span>Phone</span></div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="mailto:lexcmlc@gmail.com">
+                        <div id="email-tile"><span>Email</span></div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://www.google.com/maps/place/57+Bedford+St,+Lexington,+MA+02420/@42.4538745,-71.2346302,17z/data=!3m1!4b1!4m5!3m4!1s0x89e39dd6c3b632fb:0x52fbb9048cf68f86!8m2!3d42.4538745!4d-71.2324415" target="_blank">
+                        <div id="map-tile">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.771649058922!2d-71.23463018457399!3d42.45387447918079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39dd6c3b632fb%3A0x52fbb9048cf68f86!2s57+Bedford+St%2C+Lexington%2C+MA+02420!5e0!3m2!1sen!2sus!4v1466018197063" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> <span>Map</span> </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="footer">
         <footer class="panel-footer">
             <div class="container">
@@ -85,6 +623,10 @@
             </div>
         </footer>
     </section>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+
 </body>
 
 </html>

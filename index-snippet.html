@@ -41,191 +41,24 @@
             <div class="text-center">
                 <p>2016 Summer Program is now open! Join now to have a plethora of fun and learning.</p>
                 <br/>
-                <p>Photo Gallery</p>
-            </div>
-        </div>
-        <div class="row">
-            <a href="" data-toggle="modal" data-target="#classroom-display">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/classroom-display.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#classroom-flowers">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/classroom-flowers.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#halloween-ta">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/halloween-ta.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-1">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-1.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-3">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-3.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-5">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-5.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-6">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-6.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-7">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-7.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-8">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-8.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#game-10">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/game-10.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#students-outside">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/students-outside.JPG"> </div>
-            </a>
-            <a href="" data-toggle="modal" data-target="#students-outside-line">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-top: 30px"> <img class="img-responsive" src="images/students-outside-line.JPG"> </div>
-            </a>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="classroom-display" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/classroom-display.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                <button id="image-gallery-button" type="button" class="btn btn-lg" style="margin-bottom: 30px; background: #f6b319"> <i class="glyphicon glyphicon-picture"></i> Image Gallery </button>
+                <br>
+                <!-- The container for the list of example images -->
+                <div id="links">
+                    <a href="images/classroom.jpg" title="Classroom"> <img src="images/classroom.jpg" alt="Classroom"> </a>
+                    <a href="images/classroom-display.JPG" title="Classroom Display Wall"> <img src="images/classroom-display.JPG" alt="Classroom Display Wall"> </a>
+                    <a href="images/classroom-flowers.JPG" title="Classroom Flowers"> <img src="images/classroom-flowers.JPG" alt="Classroom Flowers"> </a>
+                </div>
+                <br>
+                <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3> <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
                 </div>
             </div>
         </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="classroom-flowers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/classroom-display.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="halloween-ta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/classroom-display.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-1.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-3" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-3.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-5" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-5.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-6" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-6.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-7" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-7.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-8" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-8.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="game-10" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/game-10.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="students-outside" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/students-outside.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
-        <!-- Modal -->
-        <div class="modal fade" id="students-outside-line" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body"> <img class="img-responsive" src="images/students-outside-line.JPG"> </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END MODAL -->
     </div>
 </section>
 <section id="programs">

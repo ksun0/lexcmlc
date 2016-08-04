@@ -2,6 +2,12 @@ body {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
 }
+#links img {
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+}
+
 
 
 /* HEADER */
@@ -133,7 +139,12 @@ h4 {
 #home,
 #courses,
 #teacher {
-    background-color: #F1F1F1;
+    background-color: #eee;
+}
+
+#home {
+    background-color: #333;
+    color: #fff;
 }
 
 
